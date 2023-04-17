@@ -57,11 +57,6 @@ function checkAnswer(currentLevel) {
     }
 }
 
-
-//$(".btn").on("click",next_Sequence);
-
-
-
 function next_Sequence()
 {
     userClickedPattern =[];
@@ -74,24 +69,12 @@ function next_Sequence()
     $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
         playSounds(randomChosenColour);
 }
-
 function startOver(){
     level =0;
     gamePattern =[];
     hasBegun = false;
     console.log("startover activated");
 }
-
-
-
-
-
-
-
-
-
-
-
 //using jquery to target on click event and passing a callback function which creates a var that stores the id target attribute of pressed colour button
 //then pushes the variable instance into an array, lastly it plays a sound function which takes the var that stored the id target.
 // Inside the click event handler, this refers to the element that was clicked. 
